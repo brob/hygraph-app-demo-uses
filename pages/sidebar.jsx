@@ -1,5 +1,4 @@
 import { useApp, useFormSidebarExtension, Wrapper } from "@graphcms/app-sdk-react";
-import { Button, Flex } from "@hygraph/baukasten";
 import QRCode from "react-qr-code";
 import {useEffect, useRef, useState} from "react";
 
