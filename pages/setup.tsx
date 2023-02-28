@@ -51,7 +51,9 @@ function Configure() {
                 <Input label="URL" name="url" value={url} onChange={handleChange} />
                 <Button
                     onClick={() =>
-                        updateInstallation({ status: "COMPLETED", config: {} })
+                        updateInstallation({ status: "COMPLETED", config: {
+                            url
+                        } })
                     }
                 >
                     Save

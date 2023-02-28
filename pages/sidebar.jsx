@@ -7,6 +7,7 @@ function SidebarElement() {
     const { form } = useApp()
     const [slug, setSlug] = useState('');
     const svgElement = useRef(null)
+    
     useEffect(() => {
         form.subscribeToFieldState(extension.sidebarConfig.SLUG_FIELD, (fieldState) => {
             setSlug(fieldState.value)
